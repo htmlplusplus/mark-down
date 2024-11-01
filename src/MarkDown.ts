@@ -5,23 +5,92 @@ export class MarkDown extends LitElement {
   static styles = css`
     :host {
       display: block;
-      padding: 25px;
-      color: var(--mark-down-text-color, #000);
     }
   `;
 
-  @property({ type: String }) header = 'Hey there';
+  @property({ type: Array }) formattedText = [];
 
-  @property({ type: Number }) counter = 5;
+  _formatHeader() {
 
-  __increment() {
-    this.counter += 1;
+  }
+
+  _formatParagraph() {
+
+  }
+
+  _formatLineBreak() {
+
+  }
+
+  /**
+   * @private
+   * @description Analyzes the text and calls _formatBold(), _formatItalic(), or _formatBoldItalic()
+   */
+  _helpTextStyle() {
+
+  }
+
+  _formatBold() {
+
+  }
+
+  _formatItalic() {
+
+  }
+
+  _formatBoldItalic() {
+
+  }
+
+  _formatBlockQuote() {
+
+  }
+
+  /**
+   * @private
+   * @description Analyzes the list and will determine if it should format as an ordered list or an unordered
+   */
+  _helpFormatList() {
+
+  }
+
+  _formatUnorderedList() {
+
+  }
+
+  _formatOrderedList() {
+
+  }
+
+  _formatCodeBlock() {
+
+  }
+
+  _formatHorizontalLine() {
+
+  }
+
+  _formatLink() {
+
+  }
+
+  formatImage() {
+
+  }
+
+  _formatTable() {
+
+  }
+
+  _handleEscapeCharacters() {
+
   }
 
   render() {
     return html`
-      <h2>${this.header} Nr. ${this.counter}!</h2>
-      <button @click=${this.__increment}>increment</button>
+      <div class="markdown-wrapper">
+
+      </div>
     `;
   }
 }

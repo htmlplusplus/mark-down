@@ -1,5 +1,5 @@
 {
-  "name": "mark-down",
+  "name": "@htmlplusplus/mark-down",
   "description": "Webcomponent mark-down following open-wc recommendations",
   "license": "MIT",
   "author": "mark-down",
