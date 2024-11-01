@@ -10,7 +10,15 @@ export class MarkDown extends LitElement {
 
   @property({ type: Array }) formattedText = [];
 
-  _formatHeader() {
+  _compileToHTML() {
+
+  }
+
+  _determineHeader() {
+
+  }
+
+  _formatHeader(text: String) {
 
   }
 

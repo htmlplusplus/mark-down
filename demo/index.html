@@ -3,28 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <style>
-    body {
-      background: #fafafa;
-    }
-  </style>
+  <script type="module" src="../dist/src/mark-down.js"></script>
 </head>
 <body>
-  <div id="demo"></div>
+  <mark-down>
+    # Heading 1
+    ## Heading 2
+    ### Heading 3
+    #### Heading 4
+    ##### Heading 5
+    ###### Heading 6
 
-  <script type="module">
-    import { html, render } from 'lit';
-    import '../dist/src/mark-down.js';
+    This is a test paragraph
+    with a test line break.
 
-    const header = 'Hello owc World!';
-    render(
-      html`
-        <mark-down .header=${header}>
-          some light-dom
-        </mark-down>
-      `,
-      document.querySelector('#demo')
-    );
-  </script>
+    **Bold Text**
+
+    *Italic Text*
+
+    ***Bold and Italic Text***
+
+    > Block quote
+
+
+  </mark-down>
 </body>
 </html>
